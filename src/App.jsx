@@ -4,6 +4,8 @@ import ProductCard from "./components/ProductCard";
 import FilterSortBar from "./components/FilterSortBar";
 import ProductModal from "./components/ProductModal";
 import Cart from "./components/Cart"; 
+import { ClipLoader } from "react-spinners";
+
 
 const apiUrl =
   "https://world.openfoodfacts.org/cgi/search.pl?action=process&json=true&fields=product_name,brands,image_front_url,ingredients_text,nutrition_grade_fr,nutriments,product_quantity,categories";
@@ -102,7 +104,11 @@ function App() {
         <FilterSortBar category={category} setCategory={setCategory} sortBy={sortBy} setSortBy={setSortBy} />
 
 
-        {loading && <p className="text-center text-blue-500 mt-4">Loading...</p>}
+        {loading && (
+  <div className="fixed top-0 left-0 w-full h-full bg-white bg-opacity-75 flex justify-center items-center z-50">
+    <ClipLoader color="#3B82F6" size={60} />
+  </div>
+)}
 
        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">

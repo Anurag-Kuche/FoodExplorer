@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const ProductCard = ({ product, onClick, addToCart }) => {
   return (
     <div
