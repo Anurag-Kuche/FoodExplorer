@@ -1,25 +1,32 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState("");
+const SearchBar = ({ setQuery }) => {
+  const [input, setInput] = useState("");
 
-  const handleSearch = () => {
-    onSearch(query);
+  const handleSearch = (e) => {
+    e.preventDefault();
+    setQuery(input);
   };
 
   return (
-    <div className="flex gap-2">
+    <form
+      onSubmit={handleSearch}
+      className="flex items-center bg-white shadow-md rounded-lg overflow-hidden"
+    >
       <input
         type="text"
-        className="border p-2 rounded"
-        placeholder="Search food..."
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search food products..."
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        className="w-full px-4 py-2 focus:outline-none"
       />
-      <button onClick={handleSearch} className="bg-blue-500 text-white p-2 rounded">
-        Search
+      <button
+        type="submit"
+        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2"
+      >
+        🔍 Search
       </button>
-    </div>
+    </form>
   );
 };
 
