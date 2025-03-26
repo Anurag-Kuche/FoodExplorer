@@ -1,4 +1,7 @@
 # 🍽️ Food Product Explorer  
+## 🚀 Live Demo
+🔗 [View Deployed App on Vercel](https://food-explorer-i73r9w6ab-anurags-projects-58a440f6.vercel.app/)
+
 
 **Food Product Explorer** is a modern web application built with **React & OpenFoodFacts API** that allows users to explore food products, filter them, and manage a shopping cart. It also includes **barcode search functionality** for quick product lookup.  
 
