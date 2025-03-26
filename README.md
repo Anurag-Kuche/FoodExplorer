@@ -1,36 +1,45 @@
- Food Product Explorer
-Food Product Explorer is a React-based application that allows users to search for food products using the OpenFoodFacts API. Users can filter and sort results, add items to a cart with persistent storage, and even search for products using barcodes.
+# 🍽️ Food Product Explorer  
 
-🚀 Features
-🔍 Advanced Search & Filtering
-Search for food products by name.
+**Food Product Explorer** is a modern web application built with **React & OpenFoodFacts API** that allows users to explore food products, filter them, and manage a shopping cart. It also includes **barcode search functionality** for quick product lookup.  
 
-Filter products by category (e.g., snacks, beverages, dairy, etc.).
+---
 
-Sort products alphabetically or based on nutrition score.
+## 🚀 Features  
 
-🛒 Cart Functionality
-Add and remove items from the cart.
+### 🔍 **Advanced Search & Filtering**  
+✔ Search food products by **name**  
+✔ Filter by **categories** (Snacks, Beverages, Dairy, etc.)  
+✔ Sort products by **name** or **nutrition score**  
 
-Sticky cart for quick access while browsing.
+### 🛒 **Cart System**  
+✔ Add & remove items from **cart**  
+✔ Persistent cart storage using **localStorage**  
+✔ **Sticky cart** for easy access while browsing  
 
-Cart data is saved in localStorage for persistence.
+### 📷 **Barcode Search (Scanner Integration)**  
+✔ Scan or enter a **barcode** to find product details instantly  
 
-📷 Barcode Search (Scanner Integration)
-Scan or enter a barcode to find a specific product.
+### 🎨 **Beautiful & Responsive UI**  
+✔ Built with **React + TailwindCSS**  
+✔ Smooth **loading animations** for better UX  
+✔ Fully **responsive** for mobile & desktop  
 
-Helps users retrieve product details instantly without searching manually.
+---
 
-🎨 Beautiful & Responsive UI
-A clean, modern design built with TailwindCSS.
+## 🛠️ Tech Stack  
 
-Smooth animations enhance user experience.
+| Technology  | Description |
+|-------------|------------|
+| **React**   | Frontend framework |
+| **TailwindCSS** | Styling framework |
+| **OpenFoodFacts API** | Product data source |
+| **LocalStorage** | Persistent cart storage |
 
-Loading animations make API interactions feel seamless.
+---
 
-🛠️ Tech Stack
-Frontend: React, TailwindCSS
+## 📌 Setup Instructions  
 
-API: OpenFoodFacts
-
-Storage: LocalStorage (for cart persistence)
+1️⃣ **Clone the repository**  
+```sh
+git clone https://github.com/yourusername/food-product-explorer.git
+cd food-product-explorer
