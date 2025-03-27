@@ -39,10 +39,12 @@
 | **LocalStorage** | Persistent cart storage |
 
 ---
+**Time taken-1 day**
 
 ## 📌 Setup Instructions  
 
 1️⃣ **Clone the repository**  
 ```sh
+
 git clone https://github.com/yourusername/food-product-explorer.git
 cd food-product-explorer
